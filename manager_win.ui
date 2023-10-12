@@ -1,0 +1,584 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>884</width>
+    <height>681</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <widget class="QStackedWidget" name="stackedWidget">
+   <property name="geometry">
+    <rect>
+     <x>-10</x>
+     <y>20</y>
+     <width>1448</width>
+     <height>641</height>
+    </rect>
+   </property>
+   <widget class="QWidget" name="page_manager">
+    <property name="maximumSize">
+     <size>
+      <width>881</width>
+      <height>611</height>
+     </size>
+    </property>
+    <widget class="QWidget" name="layoutWidget">
+     <property name="geometry">
+      <rect>
+       <x>50</x>
+       <y>30</y>
+       <width>211</width>
+       <height>413</height>
+      </rect>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout_10">
+      <item>
+       <layout class="QVBoxLayout" name="verticalLayout_3">
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_2">
+          <item>
+           <layout class="QVBoxLayout" name="verticalLayout">
+            <item>
+             <widget class="QLabel" name="label_user">
+              <property name="text">
+               <string>用户名</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="label_pwd">
+              <property name="text">
+               <string>密码</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <layout class="QVBoxLayout" name="verticalLayout_2">
+            <item>
+             <widget class="QLineEdit" name="lineEdit_user"/>
+            </item>
+            <item>
+             <widget class="QLineEdit" name="lineEdit_pwd"/>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout">
+          <item>
+           <widget class="QPushButton" name="pushButton_deleteUser">
+            <property name="text">
+             <string>删除用户</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="signUp_Button">
+            <property name="text">
+             <string>添加用户</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QVBoxLayout" name="verticalLayout_9">
+        <item>
+         <widget class="QPushButton" name="Button_printUser">
+          <property name="text">
+           <string>打印用户列表</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="pushButton_printFile">
+          <property name="text">
+           <string>打印文件列表</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <layout class="QVBoxLayout" name="verticalLayout_7">
+          <item>
+           <widget class="QLabel" name="label">
+            <property name="text">
+             <string>命令行窗口</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QTextEdit" name="textEdit_command"/>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <widget class="QPushButton" name="pushButton_do">
+          <property name="text">
+           <string>执行</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </widget>
+    <widget class="QWidget" name="layoutWidget">
+     <property name="geometry">
+      <rect>
+       <x>270</x>
+       <y>530</y>
+       <width>561</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <layout class="QHBoxLayout" name="horizontalLayout_6">
+      <item>
+       <widget class="QPushButton" name="pushButton_renamefile">
+        <property name="text">
+         <string>重命名文件</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="pushButton_cancel">
+        <property name="text">
+         <string>退出</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+    <widget class="QWidget" name="layoutWidget">
+     <property name="geometry">
+      <rect>
+       <x>50</x>
+       <y>450</y>
+       <width>211</width>
+       <height>114</height>
+      </rect>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout_11">
+      <item>
+       <widget class="QLabel" name="label_3">
+        <property name="text">
+         <string>状态栏</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QTextBrowser" name="textBrowser_con"/>
+      </item>
+     </layout>
+    </widget>
+    <widget class="QLabel" name="label_2">
+     <property name="geometry">
+      <rect>
+       <x>271</x>
+       <y>31</y>
+       <width>45</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>显示栏</string>
+     </property>
+    </widget>
+    <widget class="QWidget" name="layoutWidget">
+     <property name="geometry">
+      <rect>
+       <x>270</x>
+       <y>50</y>
+       <width>561</width>
+       <height>471</height>
+      </rect>
+     </property>
+     <layout class="QHBoxLayout" name="horizontalLayout_3">
+      <item>
+       <layout class="QVBoxLayout" name="verticalLayout_4">
+        <item>
+         <widget class="QTableWidget" name="tableWidget_user">
+          <column>
+           <property name="text">
+            <string>用户名</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>密码</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>权限</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>注册日期</string>
+           </property>
+          </column>
+         </widget>
+        </item>
+        <item>
+         <widget class="QTableWidget" name="tableWidget_file">
+          <column>
+           <property name="text">
+            <string>文件编号</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>文件名</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>日期</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>是否为附件</string>
+           </property>
+          </column>
+         </widget>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </widget>
+    <widget class="QWidget" name="">
+     <property name="geometry">
+      <rect>
+       <x>340</x>
+       <y>20</y>
+       <width>491</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <layout class="QHBoxLayout" name="horizontalLayout_4">
+      <item>
+       <widget class="QPushButton" name="pushButton_findFile">
+        <property name="text">
+         <string>PushButton</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="pushButton_findUser">
+        <property name="text">
+         <string>PushButton</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="lineEdit_find"/>
+      </item>
+     </layout>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="page_RenameFile">
+    <widget class="QGroupBox" name="groupBox">
+     <property name="geometry">
+      <rect>
+       <x>50</x>
+       <y>140</y>
+       <width>381</width>
+       <height>80</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string>文件类型：</string>
+     </property>
+     <widget class="QWidget" name="layoutWidget">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>30</y>
+        <width>371</width>
+        <height>24</height>
+       </rect>
+      </property>
+      <layout class="QHBoxLayout" name="horizontalLayout_8">
+       <item>
+        <widget class="QRadioButton" name="radioButton_clinical">
+         <property name="text">
+          <string>临床项目文件</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QRadioButton" name="radioButton_other">
+         <property name="text">
+          <string>其他文件</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+    <widget class="QGroupBox" name="groupBox_2">
+     <property name="geometry">
+      <rect>
+       <x>50</x>
+       <y>220</y>
+       <width>721</width>
+       <height>81</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string>文件类别：</string>
+     </property>
+     <widget class="QWidget" name="layoutWidget">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>30</y>
+        <width>731</width>
+        <height>24</height>
+       </rect>
+      </property>
+      <layout class="QHBoxLayout" name="horizontalLayout_9">
+       <item>
+        <widget class="QRadioButton" name="radioButton_SMP">
+         <property name="text">
+          <string>标准管理规程</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QRadioButton" name="radioButton_SOP">
+         <property name="text">
+          <string>标准操作规程</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QRadioButton" name="radioButton_SRD">
+         <property name="text">
+          <string>标准记录文件</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QRadioButton" name="radioButton_CON">
+         <property name="text">
+          <string>合同</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+    <widget class="QGroupBox" name="groupBox_3">
+     <property name="geometry">
+      <rect>
+       <x>60</x>
+       <y>380</y>
+       <width>291</width>
+       <height>80</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string>是否为附件：</string>
+     </property>
+     <widget class="QWidget" name="layoutWidget">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>40</y>
+        <width>271</width>
+        <height>24</height>
+       </rect>
+      </property>
+      <layout class="QHBoxLayout" name="horizontalLayout_13">
+       <item>
+        <widget class="QRadioButton" name="radioButton_isAnnex">
+         <property name="text">
+          <string>是</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QRadioButton" name="radioButton_NoAnnex">
+         <property name="text">
+          <string>否</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+    <widget class="QGroupBox" name="groupBox_4">
+     <property name="geometry">
+      <rect>
+       <x>410</x>
+       <y>380</y>
+       <width>351</width>
+       <height>80</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string>是否有实质改变：</string>
+     </property>
+     <widget class="QWidget" name="layoutWidget">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>40</y>
+        <width>321</width>
+        <height>24</height>
+       </rect>
+      </property>
+      <layout class="QHBoxLayout" name="horizontalLayout_12">
+       <item>
+        <widget class="QRadioButton" name="radioButton_3">
+         <property name="text">
+          <string>有实质性改变</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QRadioButton" name="radioButton_4">
+         <property name="text">
+          <string>无实质性改变</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+    <widget class="QPushButton" name="pushButton">
+     <property name="geometry">
+      <rect>
+       <x>670</x>
+       <y>490</y>
+       <width>93</width>
+       <height>28</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>使用</string>
+     </property>
+    </widget>
+    <widget class="QWidget" name="layoutWidget">
+     <property name="geometry">
+      <rect>
+       <x>50</x>
+       <y>60</y>
+       <width>761</width>
+       <height>61</height>
+      </rect>
+     </property>
+     <layout class="QHBoxLayout" name="horizontalLayout_7">
+      <item>
+       <widget class="QLineEdit" name="lineEdit_PathFile"/>
+      </item>
+      <item>
+       <widget class="QPushButton" name="pushButton_choseFile">
+        <property name="text">
+         <string>选择文件</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+    <widget class="QWidget" name="layoutWidget">
+     <property name="geometry">
+      <rect>
+       <x>60</x>
+       <y>320</y>
+       <width>241</width>
+       <height>27</height>
+      </rect>
+     </property>
+     <layout class="QHBoxLayout" name="horizontalLayout_10">
+      <item>
+       <widget class="QLabel" name="label_4">
+        <property name="text">
+         <string>新文件名：</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="lineEdit_newName"/>
+      </item>
+     </layout>
+    </widget>
+    <widget class="QWidget" name="layoutWidget">
+     <property name="geometry">
+      <rect>
+       <x>70</x>
+       <y>490</y>
+       <width>591</width>
+       <height>27</height>
+      </rect>
+     </property>
+     <layout class="QHBoxLayout" name="horizontalLayout_14">
+      <item>
+       <widget class="QLabel" name="label_5">
+        <property name="text">
+         <string>最终文件名：</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="lineEdit_FinalName"/>
+      </item>
+     </layout>
+    </widget>
+    <widget class="QPushButton" name="pushButton_back">
+     <property name="geometry">
+      <rect>
+       <x>70</x>
+       <y>530</y>
+       <width>381</width>
+       <height>28</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>返回</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_cancel_2">
+     <property name="geometry">
+      <rect>
+       <x>470</x>
+       <y>530</y>
+       <width>311</width>
+       <height>28</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>退出</string>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QWidget" name="layoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>2</width>
+     <height>2</height>
+    </rect>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout_11"/>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
